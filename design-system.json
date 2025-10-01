@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "name": "ManyuShiba Design System",
+    "version": "1.0.0",
+    "description": "Design system for Manyu Shiba token on Plasma Chain with green color palette",
+    "source": "https://www.manyushiba.com/",
+    "author": "ManyuShiba Team"
+  },
+  "tokens": {
+    "color": {
+      "brand": {
+        "primary": "#0bd47f",
+        "primary-foreground": "#042615",
+        "secondary": "#08b66e",
+        "secondary-foreground": "#FFFFFF",
+        "accent": "#a7eac7",
+        "accent-foreground": "#061a12"
+      },
+      "neutral": {
+        "100": "#e7ffee",
+        "200": "#a7eac7",
+        "300": "#6bb68a",
+        "400": "#4a9d6b",
+        "500": "#2d7a4a",
+        "600": "#1e5a33",
+        "700": "#0b2a1d",
+        "800": "#061a12",
+        "900": "#031008"
+      },
+      "plasma": {
+        "glow": "#0bd47f",
+        "energy": "#08b66e",
+        "core": "#07975d",
+        "aura": "rgba(11, 212, 127, 0.15)",
+        "pulse": "rgba(11, 212, 127, 0.25)"
+      },
+      "semantic": {
+        "success": "#0bd47f",
+        "warning": "#ffc857",
+        "error": "#ff6b6b",
+        "info": "#1a73e8"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "primary": "Inter, system-ui, -apple-system, sans-serif",
+        "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace"
+      },
+      "fontSize": {
+        "xs": "12px",
+        "sm": "14px",
+        "base": "16px",
+        "lg": "18px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "30px",
+        "4xl": "36px",
+        "5xl": "48px",
+        "6xl": "60px"
+      },
+      "fontWeight": {
+        "normal": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "extrabold": "800"
+      },
+      "lineHeight": {
+        "tight": "1.1",
+        "normal": "1.5",
+        "relaxed": "1.75"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "32px",
+      "4xl": "40px",
+      "5xl": "48px",
+      "6xl": "64px",
+      "7xl": "80px"
+    },
+    "borderRadius": {
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "2xl": "20px",
+      "full": "9999px"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px rgba(0, 0, 0, 0.1)",
+      "lg": "0 10px 15px rgba(0, 0, 0, 0.1)",
+      "xl": "0 20px 25px rgba(0, 0, 0, 0.1)",
+      "plasma": "0 20px 40px rgba(11, 212, 127, 0.15)",
+      "glow": "0 0 20px rgba(11, 212, 127, 0.3)"
+    },
+    "animation": {
+      "duration": {
+        "fast": "0.15s",
+        "normal": "0.3s",
+        "slow": "0.5s"
+      },
+      "easing": {
+        "ease": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+        "ease-out": "cubic-bezier(0, 0, 0.2, 1)"
+      }
+    }
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": "var(--color-brand-primary)",
+        "color": "var(--color-brand-primary-foreground)",
+        "border": "none",
+        "borderRadius": "var(--borderRadius-lg)",
+        "padding": "var(--spacing-md) var(--spacing-xl)",
+        "fontSize": "var(--fontSize-base)",
+        "fontWeight": "var(--fontWeight-semibold)",
+        "boxShadow": "var(--shadow-plasma)",
+        "transition": "all var(--animation-duration-normal) var(--animation-easing-ease)"
+      },
+      "secondary": {
+        "background": "transparent",
+        "color": "var(--color-neutral-100)",
+        "border": "1px solid var(--color-neutral-200)",
+        "borderRadius": "var(--borderRadius-lg)",
+        "padding": "var(--spacing-md) var(--spacing-xl)",
+        "fontSize": "var(--fontSize-base)",
+        "fontWeight": "var(--fontWeight-semibold)",
+        "transition": "all var(--animation-duration-normal) var(--animation-easing-ease)"
+      }
+    },
+    "card": {
+      "background": "var(--color-neutral-800)",
+      "border": "1px solid var(--color-neutral-700)",
+      "borderRadius": "var(--borderRadius-xl)",
+      "padding": "var(--spacing-2xl)",
+      "boxShadow": "var(--shadow-plasma)",
+      "transition": "all var(--animation-duration-normal) var(--animation-easing-ease)"
+    },
+    "input": {
+      "background": "var(--color-neutral-800)",
+      "border": "1px solid var(--color-neutral-700)",
+      "borderRadius": "var(--borderRadius-lg)",
+      "padding": "var(--spacing-md) var(--spacing-lg)",
+      "color": "var(--color-neutral-100)",
+      "fontSize": "var(--fontSize-base)",
+      "transition": "all var(--animation-duration-normal) var(--animation-easing-ease)"
+    }
+  }
+}
+
+
+
+
+

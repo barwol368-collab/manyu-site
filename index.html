@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MANYU — Shiba Token on Plasma Chain</title>
+    <meta name="description" content="MANYU — The ultimate Shiba memecoin powered by Plasma Chain. Zero tax, 1B supply, LP locked.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <meta property="og:title" content="MANYU — Shiba Token on Plasma Chain">
+    <meta property="og:description" content="The ultimate Shiba memecoin powered by Plasma Chain">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0bd47f">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="brand">
+                    <span class="brand__icon">🐕</span>
+                    <span class="brand__text">MANYU</span>
+                </div>
+                <nav class="nav">
+                    <a href="#tokenomics" class="nav__link">Tokenomics</a>
+                    <a href="#gallery" class="nav__link">Gallery</a>
+                    <a href="#buy" class="nav__link nav__link--primary">Buy $MANYU</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="buy">
+        <div class="hero__background"></div>
+        <div class="hero__image hero__image--left">
+            <img src="assets/3.jpg" alt="Manyu image left">
+        </div>
+        <div class="hero__image hero__image--right">
+            <img src="assets/2.jpg" alt="Manyu image right">
+        </div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="hero__badge-icon">🚀</span>
+                    <span class="hero__badge-text">LIVE ON PLASMA</span>
+                </div>
+                
+                <h1 class="hero__title">
+                    <span class="hero__title-main">MANYU</span>
+                    <span class="hero__title-sub">The Ultimate Shiba Memecoin</span>
+                </h1>
+                
+                <p class="hero__description">
+                    Powered by Plasma Chain's lightning-fast blocks and zero-fee transactions. 
+                    Join the pack and experience the future of memecoins.
+                </p>
+                
+                <div class="hero__actions">
+                    <button class="btn btn--primary">
+                        <span class="btn__text">Buy $MANYU</span>
+                        <span class="btn__icon">💎</span>
+                    </button>
+                    <button class="btn btn--secondary">
+                        <span class="btn__text">View Chart</span>
+                        <span class="btn__icon">📈</span>
+                    </button>
+                    <a href="https://www.instagram.com/littlemanyu_/" class="btn btn--secondary" target="_blank" rel="noopener">
+                        <span class="btn__text">Instagram</span>
+                        <span class="btn__icon">📸</span>
+                    </a>
+                </div>
+                
+                <div class="contract">
+                    <div class="contract__label">Contract Address</div>
+                    <div class="contract__content">
+                        <code class="contract__address" id="contractAddress">0x36b3ee3227f5b1d1e72d58a5491031959a84624f</code>
+                        <button class="btn btn--copy" id="copyButton">
+                            <span class="btn__text">Copy</span>
+                            <span class="btn__icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section__title">Why Choose MANYU?</h2>
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon">⚡</div>
+                    <h3 class="feature-card__title">Lightning Fast</h3>
+                    <p class="feature-card__description">Built on Plasma Chain for instant transactions and minimal fees</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon">🔒</div>
+                    <h3 class="feature-card__title">LP Locked</h3>
+                    <p class="feature-card__description">Liquidity pool permanently locked for maximum security</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon">💰</div>
+                    <h3 class="feature-card__title">Zero Tax</h3>
+                    <p class="feature-card__description">No transaction taxes - keep 100% of your tokens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics" id="tokenomics">
+        <div class="container">
+            <h2 class="section__title">Tokenomics</h2>
+            <div class="tokenomics__grid">
+                <div class="stat-card">
+                    <div class="stat-card__icon">🪙</div>
+                    <div class="stat-card__content">
+                        <div class="stat-card__label">Total Supply</div>
+                        <div class="stat-card__value">1,000,000,000</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon">🔒</div>
+                    <div class="stat-card__content">
+                        <div class="stat-card__label">LP Locked</div>
+                        <div class="stat-card__value">100%</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon">💰</div>
+                    <div class="stat-card__content">
+                        <div class="stat-card__label">Transaction Tax</div>
+                        <div class="stat-card__value">0%</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section__title">MANYU Gallery</h2>
+            <div class="gallery__grid">
+                <div class="gallery__item">
+                    <div class="gallery__image">
+                        <img src="assets/1.jpg" alt="Manyu Shiba Squad" loading="lazy">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-icon">👀</span>
+                        </div>
+                    </div>
+                    <div class="gallery__content">
+                        <h3 class="gallery__title">Shiba Squad</h3>
+                        <p class="gallery__description">The pack is strong. The pack is MANYU.</p>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__image">
+                        <img class="img--top" src="assets/4.jpg" alt="Plasma Powered" loading="lazy">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-icon">⚡</span>
+                        </div>
+                    </div>
+                    <div class="gallery__content">
+                        <h3 class="gallery__title">Plasma Powered</h3>
+                        <p class="gallery__description">Green energy meets Shiba power.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Ready to Join the Pack?</h2>
+                <p class="cta__description">Get your $MANYU tokens now and be part of the future of memecoins.</p>
+                <div class="cta__actions">
+                    <button class="btn btn--primary btn--large">
+                        <span class="btn__text">Buy $MANYU</span>
+                        <span class="btn__icon">🚀</span>
+                    </button>
+                    <a href="https://x.com/Plasma" class="btn btn--secondary btn--large" target="_blank" rel="noopener">
+                        <span class="btn__text">Follow Plasma</span>
+                        <span class="btn__icon">🐦</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="footer__icon">🐕</span>
+                    <span class="footer__text">MANYU</span>
+                </div>
+                <div class="footer__links">
+                    <a href="#tokenomics" class="footer__link">Tokenomics</a>
+                    <a href="#gallery" class="footer__link">Gallery</a>
+                    <a href="https://x.com/Plasma" class="footer__link" target="_blank" rel="noopener">Plasma</a>
+                </div>
+                <div class="footer__copyright">
+                    © 2025 $MANYU. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
