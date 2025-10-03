@@ -1,28 +1,30 @@
 /* MANYU Design System - CSS Variables */
 :root {
   /* Colors */
-  --color-brand-primary: #0bd47f;
-  --color-brand-primary-foreground: #042615;
-  --color-brand-secondary: #08b66e;
+  /* Monad-themed violet palette */
+  --color-brand-primary: #7a5cff; /* violet */
+  --color-brand-primary-foreground: #100a2a;
+  --color-brand-secondary: #5b3df6;
   --color-brand-secondary-foreground: #ffffff;
-  --color-brand-accent: #a7eac7;
-  --color-brand-accent-foreground: #061a12;
+  --color-brand-accent: #c3b6ff;
+  --color-brand-accent-foreground: #0b0720;
   
-  --color-neutral-100: #e7ffee;
-  --color-neutral-200: #a7eac7;
-  --color-neutral-300: #6bb68a;
-  --color-neutral-400: #4a9d6b;
-  --color-neutral-500: #2d7a4a;
-  --color-neutral-600: #1e5a33;
-  --color-neutral-700: #0b2a1d;
-  --color-neutral-800: #061a12;
-  --color-neutral-900: #031008;
+  /* Neutral purples (for text/backgrounds) */
+  --color-neutral-100: #efe9ff;  /* near-white lavender */
+  --color-neutral-200: #cec3ff;
+  --color-neutral-300: #ac9dff;
+  --color-neutral-400: #8e7bf2;
+  --color-neutral-500: #6f5acb;
+  --color-neutral-600: #5a49a3;
+  --color-neutral-700: #392b66;  /* cards/borders */
+  --color-neutral-800: #221a44;  /* section bg */
+  --color-neutral-900: #130f2b;  /* page bg */
   
-  --color-plasma-glow: #0bd47f;
-  --color-plasma-energy: #08b66e;
-  --color-plasma-core: #07975d;
-  --color-plasma-aura: rgba(11, 212, 127, 0.15);
-  --color-plasma-pulse: rgba(11, 212, 127, 0.25);
+  --color-plasma-glow: #7a5cff;
+  --color-plasma-energy: #5b3df6;
+  --color-plasma-core: #4b31d6;
+  --color-plasma-aura: rgba(122, 92, 255, 0.15);
+  --color-plasma-pulse: rgba(122, 92, 255, 0.25);
   
   /* Typography */
   --font-family-primary: Inter, system-ui, -apple-system, sans-serif;
@@ -103,7 +105,9 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
   color: var(--color-neutral-100);
-  background: var(--color-neutral-900);
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(122,92,255,0.06), transparent),
+              radial-gradient(900px 450px at 90% 10%, rgba(91,61,246,0.05), transparent),
+              var(--color-neutral-900);
   overflow-x: hidden;
 }
 
@@ -167,8 +171,8 @@ body {
 }
 
 .nav__link--primary {
-  background: var(--color-brand-primary);
-  color: var(--color-brand-primary-foreground);
+  background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+  color: var(--color-brand-secondary-foreground);
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: var(--border-radius-lg);
   font-weight: var(--font-weight-semibold);
@@ -254,7 +258,7 @@ body {
   font-size: var(--font-size-6xl);
   font-weight: var(--font-weight-extrabold);
   line-height: var(--line-height-tight);
-  background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+  background: linear-gradient(135deg, #ffffff, #c3b6ff 40%, var(--color-brand-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -317,8 +321,8 @@ body {
 }
 
 .btn--primary {
-  background: var(--color-brand-primary);
-  color: var(--color-brand-primary-foreground);
+  background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+  color: var(--color-brand-secondary-foreground);
   box-shadow: var(--shadow-plasma);
 }
 
